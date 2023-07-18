@@ -1,0 +1,17 @@
+﻿ <h2> Display data from JSON placeholder</h2>
+
+ <table class="table table-bordered">
+    <th>User ID</th>
+    <th>id</th>
+    <th>Title</th>
+    <th>Body</th>
+    @foreach (var item in ViewBag.Data)
+    {                 
+        <tr>           
+            <td>@item.userid</td>
+            <td>@item.id</td>
+            <td>@item.title</td>
+            <td>@item.body</td>
+        </tr>
+    }
+</table>
